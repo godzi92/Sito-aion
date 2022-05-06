@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +10,51 @@
     <meta name="description" content="Pagina che parla di mmorpg">
     <meta name="title" content="MMOWorld.com">
     <link rel="shortcut icon" href="assets/favicon2.ico" type="image/x-icon">
+    <style>img{width: 30%;}</style>
 </head>
+
 <body>
-    
+    <header>
+        <picture>
+            <source media="(min-width:600px)" srcset="assets/plagio.png">
+            <source media="(max-width:599px)" srcset="assets/plagio2.webp">
+            <img src="" alt="">
+        </picture>
+        <nav>
+            <ul>
+                <li>
+                    <a href="Home">Home</a>
+                </li>
+                <li>
+                    <label for="piattaforme">Piattaforme </label>
+                    <select name="Piattaforme" id="piattaforme">
+                        <optgroup label="PC"></optgroup>
+                        <option value="PC">World Of Warcraft</option>
+                        <option value="PC">AION</option>
+                        <option value="PC">New World</option>
+                        <optgroup label="CONSOLE"></optgroup>
+                        <option value="Console">Dark Souls</option>
+                        <option value="Console">Elden Ring</option>
+                    </select>
+                </li>
+                <li>
+                   <a href="1">Classifica Mensile Giochi Più Giocati</a> 
+                </li>
+                <li>
+                    <form action="Search">
+                       <label for="Search">Cerca un gioco!</label> <input id="Search" type="text" size="10">
+                       <input type="submit" value="Inizia la ricerca">
+                    </form>
+                </li>
+                <li>
+                    <a href="2">Login</a>
+                </li>
+                <li>
+                    <a href="3">Sign-In</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 </body>
+
 </html>
