@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMOWorld Registrati</title>
+    <meta name="author" content="Ivan e Alex">
+    <meta name="description" content="MMOWorld Registrazione">
+    <meta name="title" content="MMOWorld Registrati">
+    <link rel="shortcut icon" href="assets/favicon2.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <picture>
+            <source media="(min-width:600px)" srcset="assets/plagio.png">
+            <source media="(max-width:599px)" srcset="assets/plagio2.webp">
+            <img src="" alt="">
+        </picture>
+        <nav>
+            <ul>
+                <li>
+                    <a href="Home">Home</a>
+                </li>
+                <li>
+                    <label for="piattaforme">Piattaforme </label>
+                    <select name="Piattaforme" id="piattaforme">
+                        <optgroup label="PC"></optgroup>
+                        <option value="PC">World Of Warcraft</option>
+                        <option value="PC">AION</option>
+                        <option value="PC">New World</option>
+                        <optgroup label="CONSOLE"></optgroup>
+                        <option value="Console">Dark Souls</option>
+                        <option value="Console">Elden Ring</option>
+                    </select>
+                </li>
+                <li>
+                    <a href="1">Classifica Mensile Giochi Più Giocati</a>
+                </li>
+                <li>
+                    <form action="Search">
+                        <label for="Search">Cerca un gioco!</label> <input id="Search" type="text" size="10">
+                        <input type="submit" value="Inizia la ricerca">
+                    </form>
+                </li>
+                <li>
+                    <a href="2">Login</a>
+                </li>
+                <li>
+                    <a href="3">Sign-In</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <header>
+            Benvenuto nella pagina di registrazione
+        </header>
+        <fieldset>
+            <legend>
+                Inserisci i dati
+            </legend>
+            <p>
+                le voci con il <strong><abbr title="richiesto">*</abbr></strong> sono obbligatorie
+            </p>
+            <hr>
+            <form action="#">
+                <div>
+                    <label for="form-name">Nome e cognome</label>
+                    <input type="text" id="form-name" name="name"/><br>
+                    <label for="form-ID">ID<strong><abbr title="richiesto">*</abbr></strong></label>
+                    <input type="text" id="form-ID" name="id" required/><br>
+                </div>
+                <div>
+                    <label for="form-dob">Data di nascita</label>
+                    <input type="date" id="form-dob" name="dob"/><br>
+                    <label for="form-tel">Telefono</label>
+                    <input type="tel" id="form-tel" name="tel"/><br>
+                </div>
+                <div>
+                    <label for="form-email">Email<strong><abbr title="richiesto">*</abbr></strong></label>
+                    <input type="email" id="form-email" name="email" required/><br>
+                    <label for="form-pass">Password (8-16 caratteri)<strong><abbr title="richiesto">*</abbr></strong></label>
+                    <input type="password" id="form-pass" min="8" maxlength="16" name="pass" required/><br>
+                </div>
+                <div>
+                    <label for="newsletter">Ricevi aggiornamenti e novità con la nostra Newsletter</label>
+                    <input type="checkbox" id="newsletter" name="newsletter" checked><br>
+                </div>
+            </form>
+        </fieldset>
+    </main>
+</body>
+</html>
